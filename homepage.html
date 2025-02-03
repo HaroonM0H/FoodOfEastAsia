@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food of the Far East</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Js function for the dropdown menu -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.dropdown-menu').classList.toggle('show');
+        }
+
+    </script>
+
+    <!-- Navbar (with sticky property)-->
+<nav class="navbar">
+    <div class="logo">
+        <img src="https://img.freepik.com/premium-vector/sushi-modern-restaurant-design_617585-4177.jpg?w=740" alt="Logo">
+
+        <span>Food of East Asia</span>
+    </div>
+    <div class="menu">
+        <button class="menu-btn" onclick="toggleMenu()">
+            Menu
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12 14l-4-4h8l-4 4z"/>
+            </svg>
+        </button>
+        <div class="dropdown-menu">
+            <a href="recipes.html">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</nav>
 </head>
 <body>
     <div class="header">
@@ -13,48 +41,64 @@
     </div>
 
 
+
     <div class="section">
         <h2>Our Story</h2>
         <p>Founded in 2020, Food of East Asia started as a passion project to bring diverse culinary traditions to food enthusiasts worldwide. 
-        Our virtual kitchen celebrates the rich tastes of East Asian food, making authentic recipes accessible to home cooks everywhere.</p>
+        Our virtual kitchen celebrates the rich tastes of East Asian cuisine, making authentic recipes accessible to home cooks everywhere.</p>
     </div>
 
 
     <div class="section">
         <h2>Our Cuisines</h2>
-        <p>We specialize in three distinct culinary traditions:</p>
+        <p>We specialize in three distinct East Asian culinary foods:</p>
         <ul>
-            <li><strong>Mexican:</strong> Authentic tacos, enchiladas, and street food favorites</li>
-            <li><strong>Indian:</strong> Rich curries, aromatic biryanis, and traditional tandoor dishes</li>
-            <li><strong>Italian:</strong> Wood-fired pizzas, homemade pasta, and classic antipasti</li>
+            <li><strong>Chinese:</strong> Authentic dim sum, noodles, and wok-fried specialties</li>
+            <li><strong>Vietnamese:</strong> Fresh phở, bánh mì, and traditional street food</li>
+            <li><strong>Korean:</strong> Flavorful bulgogi, bibimbap, and street food favorites</li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Signature Dishes</h2>
         <div class="signature-dishes">
-            <div class="dish-card">
-                <img src="https://source.unsplash.com/random/400x300?tacos" alt="Authentic Street Tacos">
-                <h3>Street Tacos</h3>
-                <p>Traditional Mexican tacos with hand-pressed tortillas and fresh ingredients.</p>
+            <div class="dish-display">
+                <img src="https://www.chungying.co.uk/images/blog/Shanghai-Dumplings-Steamed-Dim-Sum.jpg" alt="Dim Sum">
+                <h3>Dim Sum</h3>
+                <p>Traditional Cantonese dim sum with handcrafted dumplings and buns.</p>
             </div>
-            <div class="dish-card">
-                <img src="https://source.unsplash.com/random/400x300?curry" alt="Butter Chicken Curry">
-                <h3>Butter Chicken</h3>
-                <p>Creamy, aromatic curry with tender chicken and rich tomato gravy.</p>
+            <div class="dish-display">
+                <img src="https://dishmagazine.com/wp-content/uploads/2024/11/pho-bo-soup-1300x1234.jpg" alt="Pho">
+                <h3>Pho Bo</h3>
+                <p>Aromatic beef noodle soup with fresh herbs and rice noodles.</p>
+
             </div>
-            <div class="dish-card">
-                <img src="https://source.unsplash.com/random/400x300?pizza" alt="Neapolitan Pizza">
-                <h3>Neapolitan Pizza</h3>
-                <p>Classic Italian pizza with San Marzano tomatoes and fresh mozzarella.</p>
+            <div class="dish-display">
+                <img src="https://media.chefdehome.com/800/0/0/bbq/korean-bbq-chicken.jpg" alt="Korean BBQ">
+                <h3>Korean BBQ</h3>
+                <p>Marinated meats and banchan sides with authentic Korean flavors.</p>
+
             </div>
         </div>
     </div>
 
-    <div class="section" style="text-align: center;">
+    <div class="section" style="text-align: center;"> 
         <h2>Ready to Start Cooking?</h2>
-        <p>Explore our collection of authentic recipes from around the world.</p>
-        <a href="recipes.html" class="cta-button">View All Recipes</a>
+        <p>Explore our collection of authentic East Asian recipes.</p>
+        <a href="recipes.html" class="recipe-button">View All Recipes</a>
     </div>
+
 </body>
+
+<footer>
+
+    <div class="footer-content">
+    <p>&copy; 2025 Food of East Asia. All rights reserved.
+        <br>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.twitter.com/">Twitter</a>
+    </div>
+    </p>
+</footer>
 </html>
