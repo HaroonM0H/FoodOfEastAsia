@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Food of East Asia</title>
+    <title>Book a Lesson - Food of East Asia</title>
     <link rel="stylesheet" href="styles.css">
 
     <nav class="navbar">
         <div class="logo">
-            <img src="https://img.freepik.com/premium-vector/sushi-modern-restaurant-design_617585-4177.jpg?w=740" alt="Logo">
+            <img src="Images/sushi-logo.jpg" alt="Logo">
             <span>Food of East Asia</span>
         </div>
         <div class="nav-links">
@@ -18,7 +18,49 @@
     </nav>
 </head>
 <body>
+    <div class="section">
+        <div class="booking-form">
+            <h1>Book a Cooking Lesson</h1>
+            <p>Learn authentic East Asian cooking techniques from our expert chefs.</p>
 
-    <!-- Rest of contact page content -->
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" required placeholder="Your Name" />
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" required placeholder="Your Email" />
+                </div>  
+                
+                <div class="form-group">
+                    <select name="lesson-type" required>
+                        <option value="">Select a cooking class you would like to attend.</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                        <option value="Korean">Korean</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="date" name="preferred-date" required />
+                </div>
+
+                <div class="form-group">
+                    <select name="time-slot" required>
+                        <option value="">Select Time Slot</option>
+                        <option value="morning">Morning (10:00 - 12:00)</option>
+                        <option value="afternoon">Afternoon (14:00 - 16:00)</option>
+                        <option value="evening">Evening (18:00 - 20:00)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" placeholder="Any special requests or dietary requirements?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Book Lesson</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
